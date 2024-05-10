@@ -1,6 +1,9 @@
+#include "bst.hpp"
 #include <iostream>
 
 int main() {
-    std::cout << "Hello World!\n";
+    BST tree;
+    tree.add(Node(5));
+    tree.traverse(tree.getRoot());
     return 0;
 }
