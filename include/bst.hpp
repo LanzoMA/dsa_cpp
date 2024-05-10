@@ -20,7 +20,7 @@ public:
     Node* find(Node* node, Node* search);
 
     void add(Node* node);
-    void remove(Node& searchNode);
+    void remove(Node* node);
 
 private:
     Node* root = nullptr;
