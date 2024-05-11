@@ -44,8 +44,8 @@ void BST::addLeafNode(Node* node, Node* newNode) {
     }
 
     if (newNode->data < node->data)
-        (node->left == nullptr) ? 
-            node->left = newNode : addLeafNode(node->left, newNode);
+        (node->left == nullptr) ?  addLeafNode(node->left, newNode) : addLeafNode(node->left, newNode);
+        // (node->left == nullptr) ? node->left = newNode : addLeafNode(node->left, newNode);
 
     if (newNode->data > node->data)
         (node->right == nullptr) ? 
