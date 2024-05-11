@@ -1,3 +1,0 @@
-/home/lanzo/repos/dsa_cpp/build/CMakeFiles/dsa.dir
-/home/lanzo/repos/dsa_cpp/build/CMakeFiles/edit_cache.dir
-/home/lanzo/repos/dsa_cpp/build/CMakeFiles/rebuild_cache.dir
