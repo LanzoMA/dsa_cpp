@@ -1,8 +1,7 @@
 #include <vector>
 #include <string>
 
-class Node
-{
+class Node {
 public:
     Node(const std::string& label);
     ~Node();
@@ -11,25 +10,22 @@ private:
     std::string label;
 };
 
-class Edge
-{
+class Edge {
 public:
-    Edge(Node& firstNode, Node& secondNode);
-    ~Edge();
+    Edge(Node* firstNode, Node* secondNode);
 
 private:
-    std::vector<Node> connectedNodes;
+    Node* connectedNodes[2];
 };
 
-class Graph
-{
+class Graph {
 public:
     Graph();
-    ~Graph();
 
-    void addNode();
+    void addNode(const Node& node);
     void removeNode();
 
 private:
     std::vector<Edge> edges;
+    int numberOfNodes = 0;
 };
